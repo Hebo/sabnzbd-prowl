@@ -28,7 +28,6 @@ if job['status'] == 0:
     if result[API_KEY].get('code') == "200":
         print "Sent Sucessfully"
     else:
-        import pdb;pdb.set_trace()
         print "Sending failed with error: {} {}".format(result[API_KEY].get('code'), 
                                                         result[API_KEY].get('message'))
 else:
